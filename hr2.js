@@ -5,9 +5,6 @@
 // If cat  catches the mouse first, print Cat A.
 // If cat  catches the mouse first, print Cat B.
 // If both cats reach the mouse at the same time, print Mouse C as the two cats fight and mouse escapes.
-// Example
-
-
 
 
 // The cats are at positions  (Cat A) and  (Cat B), and the mouse is at position . Cat B, at position  will arrive first since it is only  unit away while the other is  units away. Return 'Cat B'.
