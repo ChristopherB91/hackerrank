@@ -1,2 +1,2 @@
-# hackerrank
-Hackerrank files
+# Algorithims
+Algorithim files from different websites
