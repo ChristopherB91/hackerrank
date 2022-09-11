@@ -5,24 +5,23 @@
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 function Fib(limit) {
-    var FibSequence = [1, 2]
-    var nextVal = 0
-    var sum = 0
-    for(i = 0; FibSequence[i + 1] <= limit; i++){
-        nextVal += FibSequence[i] + FibSequence[i+1]
-        if(nextVal <= limit){
-            FibSequence.push(nextVal)
-        }
-        nextVal = 0
+  var FibSequence = [1, 2];
+  var nextVal = 0;
+  var sum = 0;
+  for (i = 0; FibSequence[i + 1] <= limit; i++) {
+    nextVal += FibSequence[i] + FibSequence[i + 1];
+    if (nextVal <= limit) {
+      FibSequence.push(nextVal);
     }
-    for(i = 0; i < FibSequence.length; i++){
-        if(FibSequence[i] % 2 == 0){
-            sum += FibSequence[i]
-        }
+    nextVal = 0;
+  }
+  for (i = 0; i < FibSequence.length; i++) {
+    if (FibSequence[i] % 2 == 0) {
+      sum += FibSequence[i];
     }
-    // return FibSequence
-    console.log(FibSequence)
-    return sum
+  }
+  console.log(FibSequence);
+  return sum;
 }
 
-console.log(Fib(4000000))
+console.log(Fib(4000000));

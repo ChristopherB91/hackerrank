@@ -6,33 +6,30 @@
 // If cat  catches the mouse first, print Cat B.
 // If both cats reach the mouse at the same time, print Mouse C as the two cats fight and mouse escapes.
 
-
 // The cats are at positions  (Cat A) and  (Cat B), and the mouse is at position . Cat B, at position  will arrive first since it is only  unit away while the other is  units away. Return 'Cat B'.
 // Complete the catAndMouse function below.
 function catAndMouse(x, y, z) {
-    let A = 0
-    let B = 0
-    if(x > z){
-       A += (x - z) 
-    }
-    if(x < z){
-       A += (z - x) 
-    }
-    if(y > z){
-       B += (y - z) 
-    }
-    if(y < z){
-       B += (z - y) 
-    }
-    if(A > B){
-       return('Cat A') 
-    }
-    if(A < B){
-       return('Cat B') 
-    }
-    if(A == B){
-        return('Mouse C')
-    }
-   
-
+  let A = 0;
+  let B = 0;
+  if (x > z) {
+    A += x - z;
+  }
+  if (x < z) {
+    A += z - x;
+  }
+  if (y > z) {
+    B += y - z;
+  }
+  if (y < z) {
+    B += z - y;
+  }
+  if (A > B) {
+    return "Cat A";
+  }
+  if (A < B) {
+    return "Cat B";
+  }
+  if (A == B) {
+    return "Mouse C";
+  }
 }
